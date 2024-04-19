@@ -80,11 +80,16 @@ let g_numSegments = 10;
 let g_imgActive = 0;
 let g_funMode = 0;
 
+function funSound () {
+  let sound = new Audio('combo.mp4');
+  sound.play();
+}
+
 function addActionsForHtmlUI() {
   // Button color events
   document.getElementById('green').onclick = function () { g_selectedColor = [0.0, 1.0, 0.0, 1.0]; g_funMode = 0;};
   document.getElementById('red').onclick = function () { g_selectedColor = [1.0, 0.0, 0.0, 1.0]; g_funMode = 0;};
-  document.getElementById('funMode').onclick = function () { g_funMode = 1; };
+  document.getElementById('funMode').onclick = function () { g_funMode = 1; funSound(); };
   document.getElementById('clearBtn').onclick = function () { g_imgActive = 0; gl.clearColor(0.0, 0.0, 0.0, 1.0); gl.clear(gl.COLOR_BUFFER_BIT); clearCanvas(); };
 
   // Buttons for shape events
