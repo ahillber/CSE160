@@ -85,7 +85,7 @@ function main() {
 
 	// Add cube to the scene, then render it
 	const shapes = [
-		makeInstance(geometry, loadColorTexture('/resources/images/purplehaze.jpg'), 0, 1),
+		makeInstance(geometry, loadColorTexture('resources/images/purplehaze.jpg'), 0, 1),
 		makeInstanceShapes(cylinderGeometry, 0x7edea1, 5, 2),
 		makeInstanceShapes(sphereGeometry, 0xd9d2e9, -4, 3)
 	];
