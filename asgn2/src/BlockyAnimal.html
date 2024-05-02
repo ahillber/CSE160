@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blocky Animal</title>
+  </head>
+
+  <body onload="main()">
+    <div>
+      Aaron Hillberg
+      <br>
+      ahillber@ucsc.edu
+      <br>
+      Notes to Grader:
+      <br>
+      Additional features: Animated most of the body parts to make a "natural" walking animation.
+      Added color to all of the parts of my character.
+      <br>
+      Added a sword to be the third level joint. Added a "poke" animation which makes the character
+      close and open their eyes.
+      <br>
+      To start and stop this animation, shift+click on the canvas. Furthermore, I optimized performance 
+      by implementing my cube a similar way to
+      <br>
+      the lab assignment. Also added a cone as a non-cube primitive. I did use chatGPT to help me 
+      with this. I cited it in my Citations.md file. 
+      <br>
+      As well as the Cone.js file.
+      
+  </div>
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> Performance Stats Appear Here </p>
+    <p>
+
+    <p>
+    Camera Angle <input type="range" min="-90" max="90" value="5" class="slider" id="angleSlide">
+    <p>
+    Head  <input type="range" min="-15" max="15" value="0" class="slider" id="headSlide"> 
+    Animation: 
+      <button type="button" id="animationHeadOn">ON</button>
+      <button type="button" id="animationHeadOff">OFF</button>
+    <p>
+    Left Leg <input type="range" min="-20" max="20" value="0" class="slider" id="leftLegSlide">
+    Animation: 
+      <button type="button" id="animationMagentaOn">ON</button>
+      <button type="button" id="animationMagentaOff">OFF</button>
+    
+    Left Shoulder <input type="range" min="-40" max="40" value="-10" class="slider" id="leftShoulderSlide">
+    Left Elbow <input type="range" min="-20" max="60" value="-10" class="slider" id="leftElbowSlide">
+    Sword (3rd Joint) <input type="range" min="-90" max="90" value="0" class="slider" id="swordSlide">
+    <p>
+    Right Leg <input type="range" min="-20" max="20" value="0" class="slider" id="rightLegSlide">
+    Animation:
+    <button type="button" id="animationRightLegOn">ON</button>
+    <button type="button" id="animationRightLegOff">OFF</button>
+    Right Shoulder <input type="range" min="-40" max="40" value="-10" class="slider" id="rightShoulderSlide">
+    <button type="button" id="animationRightShoulderOn">ON</button>
+    <button type="button" id="animationRightShoulderOff">OFF</button>
+    Right Elbow <input type="range" min="-10" max="60" value="0" class="slider" id="rightElbowSlide">
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="BlockyAnimal.js"></script>
+  </body>
+</html>
