@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>World</title>
+  </head>
+
+  <body onload="main()">
+    <div>
+      Aaron Hillberg
+      <br>
+      ahillber@ucsc.edu
+      <br>
+      Notes to Grader:
+      <br>
+      For Asgn3A Requirements: Created ground with green flattened cube and sky from big cube (0.5 pts).
+      <br>
+      Got texture working for at least one object (1 pt). Got texture on some objects and color on other
+      <br>
+      objects (has multiple cubes with different textures and color. Also multiple texture and color on
+      <br>
+      blocky Animal) (0.5pts). Has multiple textures (at least 2) (1pt).
+
+      
+  </div>
+    <canvas id="webgl" width="640" height="480">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> Performance Stats Appear Here </p>
+    <p>
+
+    <p>
+    Camera Angle <input type="range" min="0" max="359" value="5" class="slider" id="angleSlide">
+    <p>
+    Camera Angle (Y) <input type="range" min="-90" max="90" value="0" class="slider" id="yAngleSlide">
+    <p>
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="globals.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Animal.js"></script>
+    <script src="map.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
