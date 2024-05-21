@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>World</title>
+  </head>
+
+  <body onload="main()">
+    <div>
+      Aaron Hillberg
+      <br>
+      ahillber@ucsc.edu
+      <br>
+      Notes to Grader:
+      <br>
+      For Asgn3B Requirements: Implemented camera movement with WSAD, and rotation with Q & E. Has 
+      <br>
+      perspective camera implemented, and a world is implemented to walk around in. You can add and 
+      <br>
+      delete blocks. Added a simple story to the world where a bunch of knights are lounging in a 
+      <br>
+      courtyard. Also added a simple game to find the gold block. Also meets performance requirements. 
+      <br>
+      <br>
+      Additional Features: Implemented collision detection. If you try running into the boundary (stone wall),
+      <br>
+      you will be prevented from crossing it. Also, I added my blocky animal to the world. Furthermore, I 
+      <br>
+      added buttons on the webpage to choose the material for placing a block. 
+      <br>
+      <br>
+      GAME INSTRUCTIONS: Find randomly generated golden block and click it to win. An alert pops up when found.
+      <br>
+      Controls: To DELETE a block, left click and to ADD a block press "x"
+
+
+      
+  </div>
+    <canvas id="webgl" width="640" height="480">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> Performance Stats Appear Here </p>
+    <p>
+      <button type="button" id="stone">Stone</button>
+      <button type="button" id="wood">Wood</button>
+      <button type="button" id="grass">Grass</button>
+      <button type="button" id="crate">Crate</button>
+    <p>
+    
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="../lib/Stats.js"></script>
+    <script src="globals.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Animal.js"></script>
+    <script src="map.js"></script>
+    <script src="Minecraft.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
