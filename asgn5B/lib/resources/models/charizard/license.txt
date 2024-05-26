@@ -1,0 +1,11 @@
+Model Information:
+* title:	Charizard
+* source:	https://sketchfab.com/3d-models/charizard-29bae357dcb74bad8f432704e2d9f531
+* author:	nguyenlouis32 (https://sketchfab.com/nguyenlouis32)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Charizard" (https://sketchfab.com/3d-models/charizard-29bae357dcb74bad8f432704e2d9f531) by nguyenlouis32 (https://sketchfab.com/nguyenlouis32) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
