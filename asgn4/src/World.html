@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>World</title>
+  </head>
+
+  <body onload="main()">
+    <div>
+      Aaron Hillberg
+      <br>
+      ahillber@ucsc.edu
+      <br>
+      Notes to Grader:
+      <br>
+      For Asgn4 Requirements: There is at least 1 cube (1pt) and there is a sphere (1pt). The
+      <br>
+      lighting (ambient, diffuse, specular) works correctly and you can change color with slider (2.5pts).
+      <br>
+      There is a small cube to act as visual marker for light (0.5pts). There is button to turn light 
+      <br>
+      on and off (1pt). The light moves around the world, and can also be moved with sliders (1pt).
+      <br>
+      The light works with 3D world and my blocky animal (0.75pts). There is a button to visualize 
+      <br>
+      normals with color (1pt). Site link posted in canvas comments (0.5pts).
+      <br>
+      <br>
+      Notes: Light orbits in a circle by default. Use the buttons to stop the animation, then use sliders.
+      <br>
+      Controls: WSAD (movement) Q&E (turn camera). X (place block) left-click (destroy block)
+
+
+      
+  </div>
+    <canvas id="webgl" width="640" height="480">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <p id="numdot"> Performance Stats Appear Here </p>
+    <p>
+      <button type="button" id="normalOn">Normal On</button>
+      <button type="button" id="normalOff">Normal Off</button>
+    </p>
+    <p>
+      Camera Angle <input type="range" min="0" max="359" value="5" class="slider" id="angleSlide">
+    <p>
+      <button type="button" id="lightOn">Light On</button>
+      <button type="button" id="lightOff">Light Off</button>
+      <button type="button" id="lightAnimation">Animation On</button>
+      <button type="button" id="lightAnimationOff">Animation Off</button>
+    </p>
+    <p>
+      Light X<input type="range" min="-250" max="250" value="0" class="slider" id="lightSlideX">
+      Light Y<input type="range" min="-250" max="250" value="100" class="slider" id="lightSlideY">
+      Light Z<input type="range" min="-10" max="10" value="0" class="slider" id="lightSlideZ">
+    </p>
+    <p>
+      Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlide">
+      Green <input type="range" min="0" max="100" value="100" class="slider" id="greenSlide">
+      Blue <input type="range" min="0" max="100" value="100" class="slider" id="blueSlide">
+    </p>
+    <p>
+      <button type="button" id="stone">Stone</button>
+      <button type="button" id="wood">Wood</button>
+      <button type="button" id="grass">Grass</button>
+      <button type="button" id="crate">Crate</button>
+    <p>
+    
+    
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-cse160.js"></script>
+    <script src="../lib/Stats.js"></script>
+    <script src="globals.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="sphere.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Camera.js"></script>
+    <script src="Animal.js"></script>
+    <script src="map.js"></script>
+    <script src="Minecraft.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
