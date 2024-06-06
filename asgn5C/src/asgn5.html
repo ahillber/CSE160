@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Assignment 5</title>
+        <script  type="importmap">{
+            "imports": {
+                "three": "https://threejs.org/build/three.module.js",
+		        "three/addons/": "https://threejs.org/examples/jsm/"
+            }
+        }</script>
+    </head>
+    <body>
+        <div>
+            Aaron Hillberg
+            <br>
+            ahillber@ucsc.edu
+            <br>
+            Notes to Grader: Uses orbital controls. Press button under canvas to change the
+            <br>
+            camera position to be on the other person. May take a second for all resources to load.
+        </div>
+        <canvas id="c" width="910" height="512"></canvas>
+        <br>
+        <br>
+        <button type="button" id="pov" style="background-color: 04AA6D; color: white; font-size: 20px;">Change Camera</button>
+        <script type="module" src="./asgn5.js"></script>
+    </body>
+</html>
